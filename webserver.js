@@ -38,11 +38,25 @@ app.get('/display',function(req,res){
   imageData.list.forEach(function(item){
     all_images.push(item.name);
     });
-
   res.render('display.ejs',{images:all_images});
   console.log('images have loaded');
 
 });
+
+app.get('/you-are-here',function(req,res){
+  
+  let locationCode = req.query.code;
+  for(let i = 0; i < imageData.list.length; i++){
+    let element = imageData.list[i];
+    if(element.tags[0] == locationCode){
+      let src = element.name;
+      res.render('singleDisplay.ejs',{src: src});
+    }
+
+  }
+
+});
+
 
 //make another template/get for single image display that then re-directs
 //to display
