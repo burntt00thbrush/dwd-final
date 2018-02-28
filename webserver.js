@@ -46,10 +46,10 @@ app.get('/display',function(req,res){
 app.get('/you-are-here',function(req,res){
   
   var locationCode = req.query.code;
-  for(let i = 0; i < imageData.list.length; i++){
-    let element = imageData.list[i];
+  for(var i = 0; i < imageData.list.length; i++){
+    var element = imageData.list[i];
     if(element.tags[0] == locationCode){
-      let src = element.name;
+      var src = element.name;
       res.render('singleDisplay.ejs',{src: src});
     }
 
