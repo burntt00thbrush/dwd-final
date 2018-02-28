@@ -45,7 +45,7 @@ app.get('/display',function(req,res){
 
 app.get('/you-are-here',function(req,res){
   
-  let locationCode = req.query.code;
+  var locationCode = req.query.code;
   for(let i = 0; i < imageData.list.length; i++){
     let element = imageData.list[i];
     if(element.tags[0] == locationCode){
@@ -54,6 +54,8 @@ app.get('/you-are-here',function(req,res){
     }
 
   }
+
+//you-are-here?code=location1
 
 });
 
