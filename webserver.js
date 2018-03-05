@@ -16,9 +16,8 @@ var express = require('express')
 var app = express()
 
 //if someone has defined port then let it be defined by them, 
-// if not it will automatically go to 3000
-
-var _port = process.env.PORT || 3000;
+//if not it will automatically go to 3000
+var _port = process.env.PORT //|| 3000;
 
 app.set('view engine', 'ejs');
 
@@ -73,4 +72,4 @@ app.get('/you-are-here',function(req,res){
 
 
 
-//app.listen(_port);
+app.listen(_port);
