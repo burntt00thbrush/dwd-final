@@ -3,16 +3,43 @@
     <meta charset="UTF-8">
     <link rel= "stylesheet" type="text/css" href="style.css">
     </head>
-    <body>
-    <h3> HIC - ES - STAS </h3> 
+   <body>
+    
 
-    <img src="myimage.jpg" alt="My Image">
+<ul class="rig columns-4">
 
-<% for(var i=0; i<images.length; i++){%>
- 
-        <img src="./images/<%=images[i]%>"> 
+    
+    <li>
+        <h2>FIND</h2>
+    <% for(var i=0; i<25; i++){%>
+     <img src="./images/<%=images[i]%>"> 
+     <%}%>
+    </li> 
 
-<%}%>
+    <li>
+      <h2>YOUR</h2>
+    <% for(var i=25; i<50; i++){%>
+    <img src="./images/<%=images[i]%>"> 
+    <%}%>
+    </li> 
+
+     <li>
+        <h2>SELF</h2>
+    <% for(var i=50; i<75; i++){%>
+    <img src="./images/<%=images[i]%>"> 
+    <%}%>
+    </li>   
+
+     <li>
+        <h2>HERE</h2>
+    <% for(var i=75; i<100; i++){%>
+    <img src="./images/<%=images[i]%>"> 
+    <%}%>
+    </li>   
+
+</ul>
+    </body>
+</html>
 
 
     <p><a href='/index.html'>here is a description of this project</a></p>
