@@ -15,6 +15,10 @@ console.log("lets hope for the best");
 var express = require('express')
 var app = express()
 
+//if someone has defined port then let it be defined by them, 
+// if not it will automatically go to 3000
+
+var _port = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
 
@@ -63,9 +67,12 @@ app.get('/you-are-here',function(req,res){
 //make another template/get for single image display that then re-directs
 //to display
 
+//consider using the append method in that route to add in an upload form and make sure there is a url for it
 
 
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
+
+
+app.listen(_port, function () {
+  console.log('Example app listening on port ' + _port);
 })
