@@ -1,0 +1,27 @@
+{
+  "name": "hic_es_stas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webserver.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "fs": "^0.0.1-security",
+    "mongojs": "^2.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burntt00thbrush/dwd-final.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/burntt00thbrush/dwd-final/issues"
+  },
+  "homepage": "https://github.com/burntt00thbrush/dwd-final#readme"
+}
