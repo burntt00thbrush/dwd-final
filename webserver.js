@@ -73,3 +73,4 @@ app.get('/you-are-here',function(req,res){
 
 
 app.listen(_port);
+console.log("event listening on _port")
