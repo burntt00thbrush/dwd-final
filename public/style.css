@@ -92,7 +92,7 @@ h3 {
         margin-left: 0;
       }
       ul.rig li {
-        width: 100% !important; /* over-ride all li styles */
+        /*width: 100% !important; /* over-ride all li styles */
         margin: 0 0 20px;
       }
     }
